@@ -21,8 +21,26 @@ public class ProductsPOO {
         products.quantity = sc.nextInt();
 
         System.out.println("------------------------------------------");
-        System.out.println(products);
+        System.out.println("Product data: " + products);
         System.out.println("------------------------------------------");
+
+        System.out.print("Update data: ");
+        int quantity = sc.nextInt();
+        products.addProducts(quantity);
+
+        System.out.println("------------------------------------------");
+        System.out.println("Updated data: " + products);
+        System.out.println("------------------------------------------");
+
+
+        System.out.print("Remove data: ");
+        quantity = sc.nextInt();
+        products.removeProducts(quantity);
+
+        System.out.println("------------------------------------------");
+        System.out.println("Remove data: " + products);
+        System.out.println("------------------------------------------");
+
         sc.close();
     }
 }
